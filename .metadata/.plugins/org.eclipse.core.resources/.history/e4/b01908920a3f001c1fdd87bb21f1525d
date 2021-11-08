@@ -1,0 +1,37 @@
+package com.pravin.apachekafkaorder.action;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.pravin.apachekafkaorder.entity.Order;
+import com.pravin.apachekafkaorder.entity.OrderItem;
+import com.pravin.apachekafkaorder.producer.Producer;
+import com.pravin.apachekafkaorder.repository.OrderItemRepository;
+import com.pravin.apachekafkaorder.request.OrderRequest;
+
+@Component
+public class OrderAction {
+	
+	@Autowired 
+	private Producer orderProducer;
+	
+	@Autowired
+	private OrderRepository orderRepository;
+	
+	@Autowired
+	private OrderItemRepository orderItemRepository;
+
+	public Order convertToOrder(OrderRequest orderRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void saveToDatabase(Order order) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void publishToKafka(OrderItem item) {
+	}
+
+}

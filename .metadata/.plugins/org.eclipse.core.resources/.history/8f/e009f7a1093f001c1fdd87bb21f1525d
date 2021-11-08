@@ -1,0 +1,5 @@
+package com.pravin.apachekafkaorder.action;
+
+public class OderAction {
+
+}

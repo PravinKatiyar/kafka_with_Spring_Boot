@@ -1,0 +1,69 @@
+package com.pravin.apachekafkaorder.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="order_items")
+public class OrderItem {
+	@Column(nullable=false, length=200)
+	private String ItemName;
+	
+	@Id
+	@GeneratedValue
+	@Column(name = "order_id")
+	private int orderItemId;
+	
+	private int price;
+	
+	private int quantity;
+
+	@JoinColumn(name="order_id")
+	@ManyToOne
+	private Order order;
+	
+	public String getItemName() {
+		return ItemName;
+	}
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setItemName(String itemName) {
+		ItemName = itemName;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderItem [orderId=" + orderId + ", ItemName=" + ItemName + ", price=" + price + ", quantity="
+				+ quantity + "]";
+	}
+	
+
+}

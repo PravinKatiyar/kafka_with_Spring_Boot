@@ -1,0 +1,5 @@
+package com.pravin.apachekafkaorder.broker.message;
+
+public class OrderMessege {
+
+}

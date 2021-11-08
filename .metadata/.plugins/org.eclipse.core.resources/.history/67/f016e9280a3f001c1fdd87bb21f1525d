@@ -1,0 +1,24 @@
+package com.pravin.apachekafkaorder.api;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pravin.apachekafkaorder.action.OrderAction;
+import com.pravin.apachekafkaorder.entity.Order;
+import com.pravin.apachekafkaorder.request.OrderRequest;
+
+@Service
+public class OrderService {
+
+	@Autowired
+	private OrderAction orderAction;
+
+
+	public String saveOrder(OrderRequest orderRequest) {
+		// TODO Auto-generated method stub
+		Order order=orderAction.convertToOrder(orderRequest);
+		orderAction.saveToDatabase(order);
+		return null;
+	}
+
+}

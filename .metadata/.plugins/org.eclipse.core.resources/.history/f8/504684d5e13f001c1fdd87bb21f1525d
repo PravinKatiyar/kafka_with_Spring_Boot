@@ -1,0 +1,5 @@
+package com.pravin.apachekafkaorder.api;
+
+public class PromotionApi {
+
+}

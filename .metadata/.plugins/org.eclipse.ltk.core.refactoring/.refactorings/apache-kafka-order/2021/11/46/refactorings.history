@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;OrdersMessage.java&apos; to &apos;apache-kafka-pattern/src/main/java/broker.message&apos;&#x0D;&#x0A;- Original project: &apos;apache-kafka-order&apos;&#x0D;&#x0A;- Destination element: &apos;apache-kafka-pattern/src/main/java/broker.message&apos;&#x0D;&#x0A;- Original element: &apos;com.pravin.apachekafkaorder.broker.message.OrdersMessage.java&apos;" description="Copy compilation unit" destination="=apache-kafka-pattern/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;broker.message" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pravin.apachekafkaorder.broker.message{OrdersMessage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1636298494047" units="1" version="1.0"/>
+</session>

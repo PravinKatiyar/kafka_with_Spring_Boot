@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;apache-kafka-consumer/src/main/java/com.pravin.apachekafkaconsumer&apos;&#x0D;&#x0A;- Original project: &apos;apache-kafka-producer&apos;&#x0D;&#x0A;- Destination element: &apos;apache-kafka-consumer/src/main/java/com.pravin.apachekafkaconsumer&apos;&#x0D;&#x0A;- Original element: &apos;com.pravin.apachekafkaproducer.entity.Employee.java&apos;" description="Copy compilation unit" destination="=apache-kafka-consumer/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pravin.apachekafkaconsumer" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pravin.apachekafkaproducer.entity{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1635578649721" units="1" version="1.0"/>
+</session>

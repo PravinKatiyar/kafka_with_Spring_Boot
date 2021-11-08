@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="apache-kafka-storage"/>
+<aop-project name="apache-kafka-order"/>
+<aop-project name="apache-kafka-pattern"/>
+<aop-project name="apache-kafka-reward"/>
+</aop-reference-model>

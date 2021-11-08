@@ -1,0 +1,27 @@
+server.port=9094
+spring.application.name=storage
+#-------------------------------------------------------------------------------
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.hibernate.show-sql=true
+#spring.datasource.url=jdbc:postgresql://localhost:5432/kafkamicroservice
+#spring.datasource.username=postgres
+#spring.datasource.password=toor
+#
+#
+#spring.datasource.initialization-mode=always
+#spring.datasource.initialize=true
+
+#------------------------------------------------------------------------------
+spring.kafka.listener.missing-topics-fatal=false
+
+spring.kafka.consumer.key-deserializer= org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer = org.apache.kafka.common.serialization.StringDeserializer
+
+spring.kafka.producer.bootstrap-servers = localhost:9092
+
+spring.kafka.producer.key-serializer = org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer = org.apache.kafka.common.serialization.StringSerializer
+#------------------------------------------------------------------------------
+# Logging pattern for file
+logging.pattern.file= %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%

@@ -1,0 +1,5 @@
+package com.pravin.apachekafkastorage.broker.message;
+
+public class PromotionMessage {
+
+}

@@ -1,0 +1,16 @@
+package com.pravin.apachekafkaorder.broker.message;
+
+import java.time.LocalDateTime;
+
+public class OrderMessege {
+	
+	private String creditCardNumber;
+	private String itemName;
+	private LocalDateTime orderDateTime;
+	private String orderLocation;
+	private String orderNumber;
+	private int price;
+	private int quantity;
+	
+
+}

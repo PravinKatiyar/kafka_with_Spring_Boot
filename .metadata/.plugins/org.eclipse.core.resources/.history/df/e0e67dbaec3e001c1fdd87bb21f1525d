@@ -1,0 +1,17 @@
+server.port=9091
+spring.application.name=order
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5432/kafkamicroservice
+spring.datasource.username=postgres
+spring.datasource.password=admin
+
+
+spring.datasource.initialization-mode=always
+spring.datasource.initialize=true
+
+# Logging pattern for file
+logging.pattern.file= %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%
+

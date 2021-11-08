@@ -1,0 +1,16 @@
+package com.pravin.apachekafkaorder.utils;
+
+public class LocalDateTimeDeserializer extends StdDeserializer<LocalDateTime> {
+
+	private static final long serialVersionUID = 1L;
+
+	public LocalDateTimeDeserializer() {
+		super(LocalDate.class);
+	}
+
+	@Override
+	public LocalDateTime deserialize(JsonParser parser, DeserializationContext context) throws IOException {
+		return LocalDateTime.parse(parser.readValueAs(String.class), DateConstant.DATE_TIME_FORMATTER);
+	}
+
+}

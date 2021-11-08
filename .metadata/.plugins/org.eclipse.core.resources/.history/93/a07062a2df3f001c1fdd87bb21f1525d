@@ -1,0 +1,5 @@
+package com.pravin.apachekafkaorder.request;
+
+public class PromotionRequest {
+
+}

@@ -1,0 +1,21 @@
+package com.pravin.apachekafkaorder.action;
+
+import com.pravin.apachekafkaorder.entity.Order;
+import com.pravin.apachekafkaorder.request.OrderRequest;
+
+public class OrderAction {
+
+	public Order convertToOrder(OrderRequest orderRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void saveToDatabase(Order order) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void publishToKafka() {
+	}
+
+}

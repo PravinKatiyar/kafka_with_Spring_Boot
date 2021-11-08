@@ -1,0 +1,13 @@
+package com.pravin.apachekafkaorder.api;
+
+@Service
+public class DiscountService {
+
+	@Autowired
+	private DiscountAction action;
+
+	public void createDiscount(DiscountRequest request) {
+		action.publishToKafka(request);
+	}
+
+}
